@@ -4,7 +4,7 @@ Plugin Name: Country Caching For WP Super Cache
 Plugin URI: http://means.us.com
 Description: Makes Country GeoLocation work with WP Super Cache 
 Author: Andrew Wrigley
-Version: 0.5.1
+Version: 0.5.2
 Author URI: http://means.us.com/
 */
 
