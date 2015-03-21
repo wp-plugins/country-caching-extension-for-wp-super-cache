@@ -4,7 +4,7 @@ Donate link: http://means.us.com/
 Tags: WP Super Cache, Super Cache, SuperCache, caching, Country, GeoIp, Geo-Location, Maxmind
 Requires at least: 3.3
 Tested up to: 4.1.1
-Stable tag: 0.5.0
+Stable tag: 0.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,17 +22,19 @@ separate caching to CA & MX visitors; and all other visitors will see the same c
 
 It works on both normal Wordpress and Multisite (see FAQ) installations.
 
+More info in [the user guide]( http://wptest.means.us.com/2015/03/geolocation-and-wp-super-cache-caching-by-page-visitor-country-instead-of-just-page/ )
+
 **Identification of visitor country for caching**
 
-This product includes GeoLite data (both IPv4 and IPv6) created by MaxMind, available from http://www.maxmind.com .
 
 If you use Cloudflare and have "switched on" their GeoLocation option ( see [Cloudflare's instructions](https://support.cloudflare.com/hc/en-us/articles/200168236-What-does-CloudFlare-IP-Geolocation-do- ) )
-then it will be used to identify visitor country.  If not, then the Maxmind GeoLite Legacy Country Database, included with this plugin, will be used.
+then it will be used to identify visitor country.  If not, then the Maxmind GeoLite Legacy Country Database, included with this plugin, will be used. This plugin will install GeoLite data (both IPv4 and IPv6) created 
+by MaxMind, available from http://www.maxmind.com.
+
 
 Note: not tested on IPv6 (my servers are IPv4), however feedback on Stackoverflow indicate the code should work fine for IPv6.
 
-**Updating** The provided Maxmind Country/IP range data files will lose accuracy over time. If you wish to keep your IP data up to date, then installation of the Category Country Aware plugin which
-is (or will soon be) available ([here on Wordpress.Org](https://wordpress.org/plugins/category-country-aware/ )) is recommended.
+**Updating** The provided Maxmind Country/IP range data files will lose accuracy over time. If you wish to keep your IP data up to date, then installation of the Category Country Aware plugin ([here on Wordpress.Org](https://wordpress.org/plugins/category-country-aware/ )) is recommended.
 The CCA plugin automatically updates Maxmind data every 3 weeks (even if you don't use any of its other features).
 
 ** ADVICE:**
@@ -65,7 +67,7 @@ If you want automatic "3 weekly" update of *Maxmind Country->IP range data* then
 = Where can I find support/additional documentation =
 
 Support questions should be posted on Wordpress.Org<br />
-Additional documentation [is provided here]( http://wptest.means.us.com/2015/02/quick-cache-and-geoip-enable-caching-by-pagevisitor-country-instead-of-just-page/ )
+Additional documentation [is provided here]( http://wptest.means.us.com/2015/03/geolocation-and-wp-super-cache-caching-by-page-visitor-country-instead-of-just-page/ )
 
 
 = How do I know its working =
@@ -103,13 +105,17 @@ If all else fails:
 
 == Changelog ==
 
+= 0.5.1 =
+* License requirements - cosmetic change: settings form now displays notification tha Maxmind GeoIP data is being used.
+
 = 0.5.0 =
 * First published version.
 
 == Upgrade Notice ==
 
-= 0.5.0 =
-* First published version.
+= 0.5.1 =
+* License requirements - cosmetic change: settings form now displays notification tha Maxmind GeoIP data is being used.
+
 
 == License ==
 
